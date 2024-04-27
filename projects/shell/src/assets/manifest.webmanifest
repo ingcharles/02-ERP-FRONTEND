@@ -1,0 +1,28 @@
+{
+  "name": "Lodash",
+  "short_name": "Lodash",
+  "background_color": "transparent",
+  "description": "{{ site.description }}",
+  "display": "standalone",
+  "lang": "en",
+  "scope": "/",
+  "start_url": "/",
+  "theme_color": "#3492ff",
+  "icons": [
+    {
+      "src": "/assets/icons/twitter.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/twitter.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/twitter.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
