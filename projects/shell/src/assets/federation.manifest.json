@@ -1,3 +1,4 @@
 {
-	"mfPrueba": "http://localhost:4201/remoteEntry.json"
+	"mf-prueba": "http://localhost:4201/remoteEntry.json",
+  "mf-admin-master": "http://localhost:4202/remoteEntry.json"
 }

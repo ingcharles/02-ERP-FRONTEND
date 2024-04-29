@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/native-federation';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { HomeShellComponent } from './modules/home-shell/presentation/home-shell/home-shell.component';
+import { LoginComponent } from './modules/login/presentation/login/login.component';
+import { RegisterComponent } from './modules/register/presentation/register/register.component';
 
 const routes: Routes = [
   {
@@ -13,7 +15,20 @@ const routes: Routes = [
   {
     path: 'prueba',
     loadChildren: () =>
-      loadRemoteModule('mfPrueba', './pruebaModule').then((m) => m.PruebaMainModule)
+      loadRemoteModule('mf-prueba', './pruebaModule').then((m) => m.PruebaMainModule)
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'admin-master',
+    loadChildren: () =>
+      loadRemoteModule('mf-admin-master', './adminMasterModule').then((m) => m.AdminMasterMainModule)
   },
   // {
   //   path: 'prueba',

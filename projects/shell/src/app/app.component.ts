@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { StorageService } from './_services/storage.service';
-import { AuthService } from './_services/auth.service';
-import { EventBusService } from './_shared/event-bus.service';
+import { AuthService } from './modules/login/data/services/auth.service';
+import { EventBusService } from './_shared/services/event-bus.service';
 
 @Component({
   selector: 'app-root',

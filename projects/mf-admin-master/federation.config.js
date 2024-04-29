@@ -2,15 +2,15 @@ const { withNativeFederation, shareAll } = require('@angular-architects/native-f
 
 module.exports = withNativeFederation({
 
-  /// edit this name - it should be specific for each remote application
-  name: 'mf-prueba',
+  name: 'mf-admin-master',
 
-  /// define key and path to the remote remote module (it should be different of app.module.ts)
+  // exposes: {
+  //   './Component': './projects/mf-admin-master/src/app/app.component.ts',
+  // },
   exposes: {
-    './pruebaModule': './projects/mf-prueba/src/app/prueba-main/prueba-main.module.ts',
-    './pruebaHomeComponent': './projects/mf-prueba/src/app/home/home.component.ts'
+    './adminMasterModule': './projects/mf-admin-master/src/app/modules/admin-master-main/admin-master-main.module.ts'
+    // './pruebaHomeComponent': './projects/mf-prueba/src/app/home/home.component.ts'
   },
-
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },

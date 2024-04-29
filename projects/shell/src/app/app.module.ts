@@ -7,6 +7,8 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeShellModule } from './modules/home-shell/home-shell.module';
+import { LoginModule } from './modules/login/login.module';
+import { RegisterModule } from './modules/register/register.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HomeShellModule } from './modules/home-shell/home-shell.module';
     BrowserModule,
     AppRoutingModule,
     HomeShellModule,
+    LoginModule,
+    RegisterModule,
     HttpClientModule,
   ],
   providers: [
