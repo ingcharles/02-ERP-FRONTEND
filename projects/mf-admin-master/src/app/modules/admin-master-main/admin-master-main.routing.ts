@@ -10,29 +10,28 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminMasterMainModule } from './admin-master-main.module';
 import { ResetPasswordComponent } from '../reset-password/presentation/reset-password/reset-password.component';
 
 const routes: Routes = [
-	{
-		path: '', component: ResetPasswordComponent
-	},
-	{
-		path: 'reset-password', component: ResetPasswordComponent
-	},
-	// {
-	// 	path: '**',
-	// 	redirectTo: ''
-	// }
+  {
+    path: '', component: ResetPasswordComponent
+  },
+  {
+    path: 'reset-password', component: ResetPasswordComponent
+  },
+  // {
+  // 	path: '**',
+  // 	redirectTo: ''
+  // }
 ];
 
 @NgModule({
-	imports: [
-		RouterModule.forChild(routes)
-	],
-	exports: [
-		RouterModule
-	]
+  imports: [
+    RouterModule.forChild(routes),
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 
 export class AdminMasterMainRouting { }

@@ -28,7 +28,7 @@ const routes: Routes = [
   {
     path: 'admin-master',
     loadChildren: () =>
-      loadRemoteModule('mf-admin-master', './adminMasterModule').then((m) => m.AdminMasterMainModule)
+      loadRemoteModule('mf-admin-master', './adminMasterModule').then((m) => m.AdminMasterMainModule),
   },
   // {
   //   path: 'prueba',

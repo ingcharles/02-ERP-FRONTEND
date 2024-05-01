@@ -6,9 +6,10 @@ import { ResetPasswordModule } from '../reset-password/reset-password.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
-    CommonModule,
+    //CommonModule,
     ResetPasswordModule,
     AdminMasterMainRouting
   ]

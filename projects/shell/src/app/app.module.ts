@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeShellModule } from './modules/home-shell/home-shell.module';
 import { LoginModule } from './modules/login/login.module';
 import { RegisterModule } from './modules/register/register.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RegisterModule } from './modules/register/register.module';
     WrapperComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HomeShellModule,
