@@ -10,7 +10,8 @@
     "test": "ng test",
     "serve:ssr:mf-prueba": "node dist/mf-prueba/server/server.mjs",
     "serve:ssr:shell": "node dist/shell/server/server.mjs",
-    "serve:ssr:mf-admin-master": "node dist/mf-admin-master/server/server.mjs"
+    "serve:ssr:mf-admin-master": "node dist/mf-admin-master/server/server.mjs",
+    "postinstall": "node node_modules/@angular-architects/native-federation/src/patch-angular-build.js"
   },
   "private": true,
   "dependencies": {
